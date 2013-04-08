@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="bean.LoginBean" table="tbllogin">
+	   <id name="id" type="integer" column="id" >
+	   <generator class="sequence"/>
+	  </id>
+
+	  <property name="username">
+		 <column name="username" />
+	  </property>
+	  <property name="password">
+		<column name="password"/>
+	  </property>
+   </class>
+<class name="bean.UserBean" table="tbluser">
+	<id name="id" type="integer" column="id">
+		<generator class="sequence"/>
+	</id>
+	<property name="firstname">
+		<column name="firstname"/>
+	</property>
+	<property name="lastname">
+		<column name="lastname"/>
+	</property>
+	<property name="midname">
+		<column name="midname"/>
+	</property>
+	<property name="mob">
+		<column name="mob"/>
+	</property>
+	<property name="loginid">
+		<column name="loginid"/>
+	</property>
+</class>
+</hibernate-mapping>
