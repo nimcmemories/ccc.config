@@ -37,8 +37,15 @@ public class CentralController extends HttpServlet{
 	
 	@Override
 	public void init() throws ServletException {
-		// TODO Auto-generated method stub
 		super.init();
+		/*
+		 * To test tail buffer
+		 * 
+		 */
+		TailBuffer tailBuffer = new TailBuffer();
+		tailBuffer.setFILEPATH(ActionConstant.FILEPATH);
+		Thread thread = new Thread(tailBuffer);
+		thread.start();
 	}
 	
 	/**
@@ -104,6 +111,7 @@ public class CentralController extends HttpServlet{
 				Thread thread = new Thread(buildRunner);
 				thread.start();
 			}else if(actionParamCheck(req, ActionConstant.TAIL)){
+				
 				int frame = (req.getParameter("frame")!=null?Integer.parseInt(req.getParameter("frame")):0);
 				System.out.println("tailing file");
 				    res.setContentType("text/html");

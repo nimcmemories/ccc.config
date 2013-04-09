@@ -163,7 +163,7 @@
 								class="demo-cancel-click" rel="tooltip" title="Click"
 								onclick="AjaxCall();"><i class="icon-refresh"></i></a>
 							</span> <a href="#widget1container" class="block-heading"
-								data-toggle="collapse">Collapsible </a>
+								data-toggle="collapse">Running Horse</a>
 						</div>
 						<div id="widget1container" class="block-body collapse in">
 							<textarea rows="15" cols="" id="responsediv" name="responsediv"
