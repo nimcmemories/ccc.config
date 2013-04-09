@@ -6,8 +6,8 @@
 </head>
 <body>
 	<form name"HelloWorld" action="HelloWorld" method="post">
-		<input type="hidden" name="actionid" value="1"/>
-		<input type="submit" name="submit"/>
+		<input type="hidden" name="actionid" value="1" /> <input type="submit"
+			name="submit" />
 	</form>
 </body>
 </html>
