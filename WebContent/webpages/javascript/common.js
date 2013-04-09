@@ -74,4 +74,3 @@ function insertRow(tblid,json){
 		}//FOR 1.1
 	}//FOR 1
 }//INSERTROW FUNCTION END
-ajaxGetBranchList();

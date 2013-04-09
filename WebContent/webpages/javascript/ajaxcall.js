@@ -26,7 +26,7 @@ xmlhttp.onreadystatechange=function()
     }
   }
 var frame = document.getElementById("frame").value;
-xmlhttp.open("get","/servlet/HelloWorld?actionid=20&frame="+frame,true);
+xmlhttp.open("get","config?actionid=20&frame="+frame,true);
 xmlhttp.send();
 }
 
@@ -47,7 +47,7 @@ xmlhttp.onreadystatechange=function()
 	  insertRow(buildproc,xmlhttp.responseText);
     }
   }
-xmlhttp.open("get","/servlet/HelloWorld?actionid=15",true);
+xmlhttp.open("get","config?actionid=15",true);
 xmlhttp.send();
 }
 
@@ -68,6 +68,6 @@ xmlhttp.onreadystatechange=function()
 	  alert("build started");
     }
   }
-xmlhttp.open("get","/servlet/HelloWorld?actionid=19",true);
+xmlhttp.open("get","config?actionid=19",true);
 xmlhttp.send();
 }

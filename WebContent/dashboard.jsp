@@ -118,31 +118,12 @@
 							<div class="stat-widget-container">
 								<div class="stat-widget">
 									<div class="stat-button">
-										<p class="title">2,500</p>
-										<p class="detail">Accounts</p>
+										<p class="title">Lot to have here</p>
+										<p class="detail">.........</p>
 									</div>
 								</div>
 
-								<div class="stat-widget">
-									<div class="stat-button">
-										<p class="title">3,299</p>
-										<p class="detail">Subscribers</p>
-									</div>
-								</div>
-
-								<div class="stat-widget">
-									<div class="stat-button">
-										<p class="title">$1,500</p>
-										<p class="detail">Pending</p>
-									</div>
-								</div>
-
-								<div class="stat-widget">
-									<div class="stat-button">
-										<p class="title">$12,675</p>
-										<p class="detail">Completed</p>
-									</div>
-								</div>
+					
 
 							</div>
 						</div>
@@ -291,6 +272,7 @@
 
 	<script src="lib/bootstrap/js/bootstrap.js"></script>
 	<script src="webpages/javascript/common.js" type="text/javascript"></script>
+	<script src="webpages/javascript/dashboard.js" type="text/javascript"></script>
 	<script type="text/javascript">
         $("[rel=tooltip]").tooltip();
         $(function() {

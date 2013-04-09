@@ -168,7 +168,7 @@
 	</div>
 
 
-	<iframe src="/servlet/dashboard.jsp" name="dshcenter"
+	<iframe src="dashboard.jsp" name="dshcenter"
 		style="border-left-width: 1px; width: 1107px; margin-right: 10px; border-right-width: 1px; margin-left: 240px; position: absolute; height: 632px;"
 		src="/servlet/user.html"></iframe>
 	<script src="lib/bootstrap/js/bootstrap.js"></script>
