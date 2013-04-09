@@ -4,17 +4,10 @@ import helper.BaseHelper;
 import helper.DashboardHelper;
 import hibernate.HibernateUtil;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -23,14 +16,11 @@ import javax.servlet.http.HttpSession;
 
 import net.sf.json.JSONObject;
 
-import org.apache.catalina.connector.Request;
-import org.apache.tomcat.util.net.SecureNioChannel.ApplicationBufferHandler;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
-import org.hibernate.mapping.Property;
 
 import view.BaseView;
 
@@ -156,7 +146,6 @@ public class CentralController extends HttpServlet{
 					return;
 				}else{
 					 userCriteria= session.createCriteria(UserBean.class).add(Restrictions.eq("loginid", loginBean.getId()));
-					List<UserBean> userList = userCriteria.list();	
 					UserBean uBean = (UserBean)userCriteria.list().iterator().next();
 					req.getSession().setAttribute("userbean",uBean);		
 					req.setAttribute("userbean", uBean);

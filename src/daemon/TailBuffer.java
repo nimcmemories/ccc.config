@@ -9,8 +9,6 @@ import java.util.Map;
 
 import net.sf.json.JSONObject;
 
-import antlr.collections.List;
-
 public class TailBuffer implements Runnable{
 	
 	private String FILEPATH = "";
