@@ -153,13 +153,15 @@ public class CentralController extends HttpServlet{
 					res.sendRedirect("sign-in.html");	
 					return;
 				}else{
+					//Read user info and save it to session
+				     System.out.println("login id =" + loginBean.getId() + "user name " + loginBean.getUsername());
 					 userCriteria= session.createCriteria(UserBean.class).add(Restrictions.eq("loginid", loginBean.getId()));
 					UserBean uBean = (UserBean)userCriteria.list().iterator().next();
 					req.getSession().setAttribute("userbean",uBean);		
 					req.setAttribute("userbean", uBean);
 				}
 			}catch(Exception e){
-					System.out.println("ERROR "+e);
+				e.printStackTrace();
 			}finally{
 				if(session!=null)
 					session.close();
